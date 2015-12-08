@@ -1,0 +1,92 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1r2p9.42.fr
+Darwin 14.5.0 x86_64
+$> date
+Tue Dec  8 07:25:18 CET 2015
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2015/c-exam-beginner/practice-exam_20151208/mkejji
+
+= Git history ==================================================================
+$> git -C /var/folders/4s/pv_g7b5s19x1fdk8nb5783r40000gp/T/tmpYK5CWC/user log --pretty='%H - %an, %ad : %s'
+d2fd6712ea5bb0c66858e82567aef6d0f44f1cbe - Mourad KEJJI, Tue Dec 8 07:25:10 2015 +0100 : 1-1
+8b296d8968d97bb92bf71e54b5216bba5e098bd1 - Mourad KEJJI, Tue Dec 8 07:20:49 2015 +0100 : 1
+ad9c130c8357893f247572b62f7b3d9b082faa21 - Mourad KEJJI, Tue Dec 8 07:18:53 2015 +0100 : 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/4s/pv_g7b5s19x1fdk8nb5783r40000gp/T/tmpYK5CWC/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  673 Dec  8 07:25 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  8 07:25 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought  102 Dec  8 07:25 ft_swap
+
+/var/folders/4s/pv_g7b5s19x1fdk8nb5783r40000gp/T/tmpYK5CWC/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  974 Dec  8 07:25 ft_print_numbers.c
+
+/var/folders/4s/pv_g7b5s19x1fdk8nb5783r40000gp/T/tmpYK5CWC/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  962 Dec  8 07:25 ft_swap.c
+ 
+= ft_swap ======================================================================
+$> clang -Wextra -Wall -Werror ft_swap.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./zsj2z6bp7cv1s5uv3j9nn83a "-626359340" "-294031228"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./ubgvp0f0eo4m77td3bqag7g3 "-41584499" "-1127398056"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./ztxceoq0jhvlm2d2jglqbvox "1407140634" "-787975188"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./wvn811n5ub4vto2aknlgrmsm "1951884317" "876254114"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./etb0ymsqb2wyhfp767wr6sp8 "-903482264" "-2048753171"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./k41i98ldu5qrrbdwkiasbfzz "1327647975" "950232071"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./k3ixiysbk14u1eb6lms4fy4g "885270945" "-954287733"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./fjbru11e9lqcd7ywda4vxmpl "-1665797776" "847191245"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./7howrnxxkkyf1rurivtjia4m "1615671078" "1656840128"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

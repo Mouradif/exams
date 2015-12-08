@@ -1,0 +1,64 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1r11p19.42.fr
+Darwin 14.5.0 x86_64
+$> date
+Tue Dec  8 07:44:44 CET 2015
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2015/c-exam-beginner/practice-exam_20151208/mkejji
+
+= Git history ==================================================================
+$> git -C /var/folders/0f/wb778dsn4gsc02h45k_cv_dc0000gp/T/tmpWiQycK/user log --pretty='%H - %an, %ad : %s'
+149414c361883fe855f835252f1b9f06e19a9a7f - Mourad KEJJI, Tue Dec 8 07:44:35 2015 +0100 : weird
+f2344b408814b863cf8f5f7e0e546032d6bff725 - Mourad KEJJI, Tue Dec 8 07:35:30 2015 +0100 : 2
+d2fd6712ea5bb0c66858e82567aef6d0f44f1cbe - Mourad KEJJI, Tue Dec 8 07:25:10 2015 +0100 : 1-1
+8b296d8968d97bb92bf71e54b5216bba5e098bd1 - Mourad KEJJI, Tue Dec 8 07:20:49 2015 +0100 : 1
+ad9c130c8357893f247572b62f7b3d9b082faa21 - Mourad KEJJI, Tue Dec 8 07:18:53 2015 +0100 : 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/0f/wb778dsn4gsc02h45k_cv_dc0000gp/T/tmpWiQycK/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1160 Dec  8 07:44 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Dec  8 07:44 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought   102 Dec  8 07:44 ft_range
+drwxr-xr-x  3 deepthought  deepthought   102 Dec  8 07:44 ft_strrev
+drwxr-xr-x  3 deepthought  deepthought   102 Dec  8 07:44 ft_swap
+
+/var/folders/0f/wb778dsn4gsc02h45k_cv_dc0000gp/T/tmpWiQycK/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  974 Dec  8 07:44 ft_print_numbers.c
+
+/var/folders/0f/wb778dsn4gsc02h45k_cv_dc0000gp/T/tmpWiQycK/user/ft_range:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1243 Dec  8 07:44 ft_range.c
+
+/var/folders/0f/wb778dsn4gsc02h45k_cv_dc0000gp/T/tmpWiQycK/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1223 Dec  8 07:44 ft_strrev.c
+
+/var/folders/0f/wb778dsn4gsc02h45k_cv_dc0000gp/T/tmpWiQycK/user/ft_swap:
+total 8
+-rw-r--r--  1 deepthought  deepthought  962 Dec  8 07:44 ft_swap.c
+ 
+= ft_range =====================================================================
+$> clang -Wextra -Wall -Werror main.c ft_range.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ncmt7z7f4c6rqxn21jylghgd
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
