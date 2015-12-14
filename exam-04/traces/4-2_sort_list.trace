@@ -1,0 +1,130 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r10p4.42.fr
+Darwin 14.5.0 x86_64
+$> date
+Mon Dec 14 20:13:34 CET 2015
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2015/c-exam-beginner/practice-exam_20151214/mkejji3
+
+= Git history ==================================================================
+$> git -C /var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user log --pretty='%H - %an, %ad : %s'
+e06c3b8f44fc42e91e4a1058d0c83af30d3fb0b8 - Mourad KEJJI, Mon Dec 14 20:13:24 2015 +0100 : sortlist
+1edfca9116546bc5a4107d129d4009f9d093fd33 - Mourad KEJJI, Mon Dec 14 19:58:56 2015 +0100 : list
+57669734f63d1b2304f882682870cf201b402d23 - Mourad KEJJI, Mon Dec 14 19:51:27 2015 +0100 : epur
+f75db0907f8f8c17eafcb91f530d8f608f50e50e - Mourad KEJJI, Mon Dec 14 19:39:29 2015 +0100 : bits
+f6ff2c815d41913808056c64bd81bc0fc695a317 - Mourad KEJJI, Mon Dec 14 19:26:11 2015 +0100 : strlen
+e4a7ae841dd1152860cb8ed36449616258ac16bf - Mourad KEJJI, Mon Dec 14 19:17:29 2015 +0100 : maff alpha
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1467 Dec 14 20:13 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 14 20:13 epur_str
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 14 20:13 ft_list_remove_if
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 14 20:13 ft_strlen
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 14 20:13 maff_alpha
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 14 20:13 print_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Dec 14 20:13 sort_list
+
+/var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user/epur_str:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1394 Dec 14 20:13 epur_str.c
+
+/var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user/ft_list_remove_if:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1191 Dec 14 20:13 ft_list_remove_if.c
+
+/var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user/ft_strlen:
+total 8
+-rw-r--r--  1 deepthought  deepthought  974 Dec 14 20:13 ft_strlen.c
+
+/var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user/maff_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  979 Dec 14 20:13 maff_alpha.c
+
+/var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1639 Dec 14 20:13 print_bits.c
+
+/var/folders/wc/s12tmmvx56b9n2g8y6jly3500000gp/T/tmprQ84lR/user/sort_list:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1248 Dec 14 20:13 sort_list.c
+ 
+= sort_list ====================================================================
+$> clang -Wextra -Wall -Werror sort_list.c main.c -o user_exe 
+sort_list.c:13:2: error: invalid preprocessing directive
+#inclue "list.h"
+ ^
+sort_list.c:15:15: error: unknown type name 't_list'
+void    lst_swap(t_list **lsta, t_list **lstb)
+                 ^
+sort_list.c:15:30: error: unknown type name 't_list'
+void    lst_swap(t_list **lsta, t_list **lstb)
+                                ^
+sort_list.c:17:2: error: use of undeclared identifier 't_list'
+        t_list  *lstc;
+        ^
+sort_list.c:17:10: error: use of undeclared identifier 'lstc'
+        t_list  *lstc;
+                 ^
+sort_list.c:19:2: error: use of undeclared identifier 'lstc'
+        lstc = *lsta;
+        ^
+sort_list.c:21:10: error: use of undeclared identifier 'lstc'
+        *lstb = lstc;
+                ^
+sort_list.c:24:1: error: unknown type name 't_list'
+t_list  *sort_list(t_list       *lst, int (*cmp)(int, int))
+^
+sort_list.c:24:19: error: unknown type name 't_list'
+t_list  *sort_list(t_list       *lst, int (*cmp)(int, int))
+                   ^
+sort_list.c:26:2: error: use of undeclared identifier 't_list'
+        t_list  *cur;
+        ^
+sort_list.c:26:10: error: use of undeclared identifier 'cur'
+        t_list  *cur;
+                 ^
+sort_list.c:28:2: error: use of undeclared identifier 'cur'
+        cur = lst;
+        ^
+sort_list.c:29:9: error: use of undeclared identifier 'cur'
+        while (cur->next)
+               ^
+sort_list.c:31:11: error: use of undeclared identifier 'cur'
+                if (cmp(cur->data, cur->next->data) == 0)
+                        ^
+sort_list.c:31:22: error: use of undeclared identifier 'cur'
+                if (cmp(cur->data, cur->next->data) == 0)
+                                   ^
+sort_list.c:33:14: error: use of undeclared identifier 'cur'
+                        lst_swap(&cur, &(cut->next));
+                                  ^
+sort_list.c:33:21: error: use of undeclared identifier 'cut'
+                        lst_swap(&cur, &(cut->next));
+                                         ^
+sort_list.c:34:4: error: use of undeclared identifier 'cur'
+                        cur = lst;
+                        ^
+sort_list.c:36:3: error: use of undeclared identifier 'cur'
+                cur = cur->next;
+                ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

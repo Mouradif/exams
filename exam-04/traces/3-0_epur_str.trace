@@ -1,0 +1,93 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1r4p22.42.fr
+Darwin 14.5.0 x86_64
+$> date
+Mon Dec 14 19:52:04 CET 2015
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.0 (clang-700.1.76)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2015/c-exam-beginner/practice-exam_20151214/mkejji3
+
+= Git history ==================================================================
+$> git -C /var/folders/b3/_694g5093qs50cy523_l7f5r0000gp/T/tmp2wPtLV/user log --pretty='%H - %an, %ad : %s'
+57669734f63d1b2304f882682870cf201b402d23 - Mourad KEJJI, Mon Dec 14 19:51:27 2015 +0100 : epur
+f75db0907f8f8c17eafcb91f530d8f608f50e50e - Mourad KEJJI, Mon Dec 14 19:39:29 2015 +0100 : bits
+f6ff2c815d41913808056c64bd81bc0fc695a317 - Mourad KEJJI, Mon Dec 14 19:26:11 2015 +0100 : strlen
+e4a7ae841dd1152860cb8ed36449616258ac16bf - Mourad KEJJI, Mon Dec 14 19:17:29 2015 +0100 : maff alpha
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/b3/_694g5093qs50cy523_l7f5r0000gp/T/tmp2wPtLV/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  970 Dec 14 19:52 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 14 19:52 epur_str
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 14 19:52 ft_strlen
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 14 19:52 maff_alpha
+drwxr-xr-x  3 deepthought  deepthought  102 Dec 14 19:52 print_bits
+
+/var/folders/b3/_694g5093qs50cy523_l7f5r0000gp/T/tmp2wPtLV/user/epur_str:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1394 Dec 14 19:52 epur_str.c
+
+/var/folders/b3/_694g5093qs50cy523_l7f5r0000gp/T/tmp2wPtLV/user/ft_strlen:
+total 8
+-rw-r--r--  1 deepthought  deepthought  974 Dec 14 19:52 ft_strlen.c
+
+/var/folders/b3/_694g5093qs50cy523_l7f5r0000gp/T/tmp2wPtLV/user/maff_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  979 Dec 14 19:52 maff_alpha.c
+
+/var/folders/b3/_694g5093qs50cy523_l7f5r0000gp/T/tmp2wPtLV/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1639 Dec 14 19:52 print_bits.c
+ 
+= epur_str =====================================================================
+$> clang -Wextra -Wall -Werror epur_str.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./9wi0q8j8nltykjqzvgd150cx 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./6imp21ajzjxhnn5fq7e3fhwm " fa f ds f ff" " few"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./0gkcttm5v0u0xtw3c7xnsf8i " this is   f-u-b-a-r      "
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./jkeha20478wz81fwp811yjf6 "mon poney s'apelle poussiere d'etoile"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./vzjbl175irpw51cblsgrdbtc ""
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./557gh7susbvy26sjw6i90wyi "quelle est la difference entre un bebe mort et un sandwich au poulet          ? "
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./e7qt4nkjfo3jkhrd67yec0x4 "..."
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
